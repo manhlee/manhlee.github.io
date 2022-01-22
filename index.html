@@ -44,12 +44,27 @@
       <div class="footer">
   		<p>Manh Le - Overwrite</p>
 	  </div>
-      <audio src="./music/Happy New Year - ABBA-nhacchuong123.com.mp3" autoplay loop></audio>
+    <iframe src="./music/Happy New Year - ABBA-nhacchuong123.com.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>
+    <audio autoplay loop  id="playAudio">
+      <source src="./music/Happy New Year - ABBA-nhacchuong123.com.mp3">
+  </audio>
+      <!-- <audio src="./music/Happy New Year - ABBA-nhacchuong123.com.mp3" autoplay loop></audio> -->
+      
       <script src="js/jquery-3.4.1.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/sweetalert2@9.js"></script>
       <script src="js/script.js"></script>
+      <script>
+          var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+          if (!isChrome){
+              $('#iframeAudio').remove()
+          }
+          else {
+              $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+          }
+      </script>
 
     </body>
   </html>
