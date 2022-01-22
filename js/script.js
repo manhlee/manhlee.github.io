@@ -14,9 +14,9 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'Chào bạn nhé!',
-        text: 'Nhấn Ok để tiếp tục',
-        imageUrl: 'img/cuteCat.jpg',
+        title: 'Chào bạn!',
+        text: 'Manh Lê muốn gửi lời chúc đến bạn!',
+        imageUrl: 'img/my-img.jpg',
         imageWidth: 300,
         imageHeight: 300,
         background: '#000055',
@@ -70,11 +70,11 @@ $('#yes').click(function() {
     $('.content').hide(200);
     Swal.fire({
         width: 900,
-        confirmButtonText: 'Okiiiii lun <3',
-        background: '#3085d6',
-        title: 'Tớ biết mà ^^ Tớ đồng ý',
-        text: "Giờ cậu có thể thoát ra và nhắn tin với tớ rằng cậu thích tớ thế nào =)) I love you x3000",
-        confirmButtonColor: '#83d0c9',
+        confirmButtonText: 'Nhận lời chúc!',
+        background: "#da2c2c",
+        title: 'Năm mới không nên tham lam nha :))',
+        text: "Kính chúc anh chị em một năm mới tràn đầy niềm vui và hạnh phúc .Vui trong sức khỏe, trẻ trong tâm hồn, khôn trong lý tưởng, trưởng thành trong mọi lĩnh vực!",
+        confirmButtonColor: '##cbb42d',
         onClose: () => {
             $('.content').show(200);
             }
